@@ -27,7 +27,7 @@ fetch("https://opentdb.com/api.php?amount=10&type=multiple", {
         <button class="next1">Næste Spørgsmål</button>
         </section>
         `
-        //Her får jeg det rigtige svar til at blive blot
+        //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
         
         let sandt = document.querySelector('.true')
         let falsk = document.querySelectorAll('.false')
@@ -63,16 +63,32 @@ fetch("https://opentdb.com/api.php?amount=10&type=multiple", {
             <button class="false">${data.results[1].incorrect_answers[0]}</button>
             <button class="false">${data.results[1].incorrect_answers[1]}</button>
             <button class="false">${data.results[1].incorrect_answers[2]}</button>
-            <button class="true">${data.results[1].correct_answer[0]}</button>
+            <button class="true">${data.results[1].correct_answer}</button>
                 <button class="next2">Næste Spørgsmål</button>
                 </section>
                 `
-                // her bliver det rigtige svar blåt
+                //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
                 let sandt = document.querySelector('.true')
+                let falsk = document.querySelectorAll('.false')
                 sandt.addEventListener('click', ()=>{
                     sandt.style.backgroundColor = "lightgreen";
+                    if (sandt.style.backgroundColor = "lightgreen") {
+                        falsk.forEach(elements => {
+                            elements.disabled = true;
+                        })
+                    }
                 })
-            }
+            falsk.forEach(element => {
+                element.addEventListener('click', () =>{
+                    element.style.backgroundColor = "red";
+                    if (element.style.backgroundColor = "red") {
+                        falsk.forEach(elements => {
+                            elements.disabled = true;
+                            sandt.disabled = true;
+                        })
+                    }
+                })
+            });
 
 
             // Her starter spørgsemål nr 3
@@ -80,23 +96,83 @@ fetch("https://opentdb.com/api.php?amount=10&type=multiple", {
                 if (sandt.style.backgroundColor = "lightgreen") {
                     quizArticle.innerHTML = `
                     <section>
-                    <h2>Hvad er h2o</h2>
+                    <h2>${data.results[2].question}</h2>
                 </section>
                 <section>
-                    <button class="true">vand</button>
-                    <button class="false">ild</button>
-                    <button class="false">jord</button>
-                    <button class="false">luft</button>
-                    <button class="next2">Næste Spørgsmål</button>
+                <button class="true">${data.results[2].correct_answer}</button>
+                <button class="false">${data.results[2].incorrect_answers[0]}</button>
+                <button class="false">${data.results[2].incorrect_answers[1]}</button>
+                <button class="false">${data.results[2].incorrect_answers[2]}</button>
+                    <button class="next3">Næste Spørgsmål</button>
                     </section>
                     `
-                    // her bliver det rigtige svar blåt
+                       //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
                     let sandt = document.querySelector('.true')
+                    let falsk = document.querySelectorAll('.false')
                     sandt.addEventListener('click', ()=>{
                         sandt.style.backgroundColor = "lightgreen";
+                        if (sandt.style.backgroundColor = "lightgreen") {
+                            falsk.forEach(elements => {
+                                elements.disabled = true;
+                            })
+                        }
                     })
-                }
+                falsk.forEach(element => {
+                    element.addEventListener('click', () =>{
+                        element.style.backgroundColor = "red";
+                        if (element.style.backgroundColor = "red") {
+                            falsk.forEach(elements => {
+                                elements.disabled = true;
+                                sandt.disabled = true;
+                            })
+                        }
+                    })
+                });
+
+
+
+                // Her starter spørgsemål nr 4
+                document.querySelector('.next3').addEventListener('click', ()=>{
+                    if (sandt.style.backgroundColor = "lightgreen") {
+                        quizArticle.innerHTML = `
+                        <section>
+                        <h2>${data.results[3].question}</h2>
+                    </section>
+                    <section>
+                    <button class="false">${data.results[3].incorrect_answers[0]}}</button>
+                    <button class="true">${data.results[3].correct_answer}</button>
+                    <button class="false">${data.results[3].incorrect_answers[1]}</button>
+                    <button class="false">${data.results[3].incorrect_answers[2]}</button>
+                        <button class="next2">Næste Spørgsmål</button>
+                        </section>
+                        `
+                    //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                    let sandt = document.querySelector('.true')
+                    let falsk = document.querySelectorAll('.false')
+                    sandt.addEventListener('click', ()=>{
+                        sandt.style.backgroundColor = "lightgreen";
+                        if (sandt.style.backgroundColor = "lightgreen") {
+                            falsk.forEach(elements => {
+                                elements.disabled = true;
+                            })
+                        }
+                    })
+                falsk.forEach(element => {
+                    element.addEventListener('click', () =>{
+                        element.style.backgroundColor = "red";
+                        if (element.style.backgroundColor = "red") {
+                            falsk.forEach(elements => {
+                                elements.disabled = true;
+                                sandt.disabled = true;
+                            })
+                        }
+                    })
+                });
+            }
+        })
+            }
             })
+        }
         })
     })
 })
