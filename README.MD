@@ -31,3 +31,6 @@ Dit projekt skal derfor integreres med:
   
 # Build, test, and learn!
 God arbejdslyst...
+
+Link til siden online
+https://progressiv-web-app.netlify.app/
