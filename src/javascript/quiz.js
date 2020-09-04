@@ -309,13 +309,13 @@ document.addEventListener('DOMContentLoaded', () => {
                                                                         quizArticle.innerHTML = `
                                                                                         <section>
                                                                                         <h1>Spøgrsmål 8</h1>
-                                                                                        <h2>${data.results[8].question}</h2>
+                                                                                        <h2>${data.results[7].question}</h2>
                                                                                     </section>
                                                                                     <section>
-                                                                                    <button class="false">${data.results[6].incorrect_answers[0]}}</button>
-                                                                                    <button class="true">${data.results[8].correct_answer}</button>
-                                                                                    <button class="false">${data.results[8].incorrect_answers[1]}</button>
-                                                                                    <button class="false">${data.results[8].incorrect_answers[2]}</button>
+                                                                                    <button class="false">${data.results[7].incorrect_answers[0]}}</button>
+                                                                                    <button class="true">${data.results[7].correct_answer}</button>
+                                                                                    <button class="false">${data.results[7].incorrect_answers[1]}</button>
+                                                                                    <button class="false">${data.results[7].incorrect_answers[2]}</button>
                                                                                         <button class="next8">Næste Spørgsmål</button>
                                                                                         </section>
                                                                                         `
@@ -347,18 +347,18 @@ document.addEventListener('DOMContentLoaded', () => {
                                                                         document.querySelector('.next8').addEventListener('click', () => {
                                                                             if (sandt.style.backgroundColor = "lightgreen") {
                                                                                 quizArticle.innerHTML = `
-                                                                                        <section>
-                                                                                        <h1>Spøgrsmål 9</h1>
-                                                                                        <h2>${data.results[9].question}</h2>
-                                                                                    </section>
-                                                                                    <section>
-                                                                                    <button class="false">${data.results[9].incorrect_answers[0]}}</button>
-                                                                                    <button class="true">${data.results[9].correct_answer}</button>
-                                                                                    <button class="false">${data.results[9].incorrect_answers[1]}</button>
-                                                                                    <button class="false">${data.results[9].incorrect_answers[2]}</button>
-                                                                                        <button class="next9">Næste Spørgsmål</button>
-                                                                                        </section>
-                                                                                        `
+                                                                                                <section>
+                                                                                                <h1>Spøgrsmål 9</h1>
+                                                                                                <h2>${data.results[8].question}</h2>
+                                                                                            </section>
+                                                                                            <section>
+                                                                                            <button class="false">${data.results[8].incorrect_answers[0]}}</button>
+                                                                                            <button class="true">${data.results[8].correct_answer}</button>
+                                                                                            <button class="false">${data.results[8].incorrect_answers[1]}</button>
+                                                                                            <button class="false">${data.results[8].incorrect_answers[2]}</button>
+                                                                                                <button class="next9">Næste Spørgsmål</button>
+                                                                                                </section>
+                                                                                                `
                                                                                 //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
                                                                                 let sandt = document.querySelector('.true')
                                                                                 let falsk = document.querySelectorAll('.false')
@@ -381,6 +381,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                                                                         }
                                                                                     })
                                                                                 });
+        
+                                                                                //her slutter spørgsmål 8
 
                                                                                 //her slutter spørgsmål 9
                                                                                 // Her starter spørgsemål nr 10
@@ -389,13 +391,13 @@ document.addEventListener('DOMContentLoaded', () => {
                                                                                         quizArticle.innerHTML = `
                                                                                         <section>
                                                                                         <h1>Spøgrsmål 10</h1>
-                                                                                        <h2>${data.results[10].question}</h2>
+                                                                                        <h2>${data.results[9].question}</h2>
                                                                                     </section>
                                                                                     <section>
-                                                                                    <button class="false">${data.results[10].incorrect_answers[0]}}</button>
-                                                                                    <button class="true">${data.results[10].correct_answer}</button>
-                                                                                    <button class="false">${data.results[10].incorrect_answers[1]}</button>
-                                                                                    <button class="false">${data.results[10].incorrect_answers[2]}</button>
+                                                                                    <button class="false">${data.results[9].incorrect_answers[0]}}</button>
+                                                                                    <button class="true">${data.results[9].correct_answer}</button>
+                                                                                    <button class="false">${data.results[9].incorrect_answers[1]}</button>
+                                                                                    <button class="false">${data.results[9].incorrect_answers[2]}</button>
                                                                                         <button class="next10">Næste Spørgsmål</button>
                                                                                         </section>
                                                                                         `
