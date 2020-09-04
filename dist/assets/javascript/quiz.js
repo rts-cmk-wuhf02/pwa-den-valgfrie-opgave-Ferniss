@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
           document.querySelector('.next2').addEventListener('click', function () {
             if (_sandt.style.backgroundColor = "lightgreen") {
-              quizArticle.innerHTML = "\n                        <section>\n                                <h1>Sp\xF8grsm\xE5l 3</h1>\n                                <h2>".concat(data.results[2].question, "</h2>\n                            </section>\n                            <section>\n                                <button class=\"true\">").concat(data.results[2].correct_answer, "</button>\n                                <button class=\"false\">").concat(data.results[2].incorrect_answers[0], "</button>\n                                <button class=\"false\">").concat(data.results[2].incorrect_answers[1], "</button>\n                                <button class=\"false\">").concat(data.results[2].incorrect_answers[2], "</button>\n                                <button class=\"next3\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                            </section>\n                        "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+              quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 3</h1>\n                            <h2>".concat(data.results[2].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"true\">").concat(data.results[2].correct_answer, "</button>\n                            <button class=\"false\">").concat(data.results[2].incorrect_answers[0], "</button>\n                            <button class=\"false\">").concat(data.results[2].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[2].incorrect_answers[2], "</button>\n                             <button class=\"next3\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
               var _sandt2 = document.querySelector('.true');
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
               document.querySelector('.next3').addEventListener('click', function () {
                 if (_sandt2.style.backgroundColor = "lightgreen") {
-                  quizArticle.innerHTML = "\n                        <section>\n                        <h1>Sp\xF8grsm\xE5l 4</h1>\n                        <h2>".concat(data.results[3].question, "</h2>\n                    </section>\n                    <section>\n                    <button class=\"false\">").concat(data.results[3].incorrect_answers[0], "}</button>\n                    <button class=\"false\">").concat(data.results[3].incorrect_answers[1], "</button>\n                    <button class=\"false\">").concat(data.results[3].incorrect_answers[2], "</button>\n                    <button class=\"true\">").concat(data.results[3].correct_answer, "</button>\n                        <button class=\"next4\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                        "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                  quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 4</h1>\n                            <h2>".concat(data.results[3].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"false\">").concat(data.results[3].incorrect_answers[0], "}</button>\n                            <button class=\"false\">").concat(data.results[3].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[3].incorrect_answers[2], "</button>\n                            <button class=\"true\">").concat(data.results[3].correct_answer, "</button>\n                            <button class=\"next4\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                   var _sandt3 = document.querySelector('.true');
 
@@ -139,13 +139,13 @@ document.addEventListener('DOMContentLoaded', function () {
                         });
                       }
                     });
-                  }); // Her slutter spørgsemål nr 4
+                  }); //her slutter spørgsmål 4
                   // Her starter spørgsemål nr 5
 
 
                   document.querySelector('.next4').addEventListener('click', function () {
                     if (_sandt3.style.backgroundColor = "lightgreen") {
-                      quizArticle.innerHTML = "\n    <section>\n    <h1>Sp\xF8grsm\xE5l 5</h1>\n    <h2>".concat(data.results[4].question, "</h2>\n</section>\n<section>\n<button class=\"true\">").concat(data.results[4].correct_answer, "</button>\n<button class=\"false\">").concat(data.results[4].incorrect_answers[0], "</button>\n<button class=\"false\">").concat(data.results[4].incorrect_answers[1], "</button>\n<button class=\"false\">").concat(data.results[4].incorrect_answers[2], "</button>\n    <button class=\"next5\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n    </section>\n    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                      quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 5</h1>\n                            <h2>".concat(data.results[4].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"true\">").concat(data.results[4].correct_answer, "</button>\n                            <button class=\"false\">").concat(data.results[4].incorrect_answers[0], "</button>\n                            <button class=\"false\">").concat(data.results[4].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[4].incorrect_answers[2], "</button>\n                            <button class=\"next5\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                       var _sandt4 = document.querySelector('.true');
 
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                       document.querySelector('.next5').addEventListener('click', function () {
                         if (_sandt4.style.backgroundColor = "lightgreen") {
-                          quizArticle.innerHTML = "\n                                            <section>\n                                            <h1>Sp\xF8grsm\xE5l 6</h1>\n                                            <h2>".concat(data.results[5].question, "</h2>\n                                        </section>\n                                        <section>\n                                        <button class=\"false\">").concat(data.results[5].incorrect_answers[0], "}</button>\n                                        <button class=\"true\">").concat(data.results[5].correct_answer, "</button>\n                                        <button class=\"false\">").concat(data.results[5].incorrect_answers[1], "</button>\n                                        <button class=\"false\">").concat(data.results[5].incorrect_answers[2], "</button>\n                                            <button class=\"next6\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                                            </section>\n                                            "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                          quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 6</h1>\n                            <h2>".concat(data.results[5].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"false\">").concat(data.results[5].incorrect_answers[0], "}</button>\n                            <button class=\"true\">").concat(data.results[5].correct_answer, "</button>\n                            <button class=\"false\">").concat(data.results[5].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[5].incorrect_answers[2], "</button>\n                            <button class=\"next6\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                           var _sandt5 = document.querySelector('.true');
 
@@ -205,13 +205,13 @@ document.addEventListener('DOMContentLoaded', function () {
                                 });
                               }
                             });
-                          }); // Her slutter spørgsemål nr 6
+                          }); //her slutter spørgsmål 6
                           // Her starter spørgsemål nr 7
 
 
                           document.querySelector('.next6').addEventListener('click', function () {
                             if (_sandt5.style.backgroundColor = "lightgreen") {
-                              quizArticle.innerHTML = "\n                                            <section>\n                                            <h1>Sp\xF8grsm\xE5l 7</h1>\n                                            <h2>".concat(data.results[6].question, "</h2>\n                                        </section>\n                                        <section>\n                                        <button class=\"false\">").concat(data.results[6].incorrect_answers[0], "}</button>\n                                        <button class=\"false\">").concat(data.results[6].incorrect_answers[1], "</button>\n                                        <button class=\"false\">").concat(data.results[6].incorrect_answers[2], "</button>\n                                        <button class=\"true\">").concat(data.results[6].correct_answer, "</button>\n                                            <button class=\"next7\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                                            </section>\n                                            "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                              quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 7</h1>\n                            <h2>".concat(data.results[6].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"false\">").concat(data.results[6].incorrect_answers[0], "}</button>\n                            <button class=\"false\">").concat(data.results[6].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[6].incorrect_answers[2], "</button>\n                            <button class=\"true\">").concat(data.results[6].correct_answer, "</button>\n                            <button class=\"next7\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                               var _sandt6 = document.querySelector('.true');
 
@@ -238,13 +238,13 @@ document.addEventListener('DOMContentLoaded', function () {
                                     });
                                   }
                                 });
-                              }); // Her slutter spørgsemål nr 7
+                              }); //her slutter spørgsmål 7
                               // Her starter spørgsemål nr 8
 
 
                               document.querySelector('.next7').addEventListener('click', function () {
                                 if (_sandt6.style.backgroundColor = "lightgreen") {
-                                  quizArticle.innerHTML = "\n                                            <section>\n                                            <h1>Sp\xF8grsm\xE5l 8</h1>\n                                            <h2>".concat(data.results[7].question, "</h2>\n                                        </section>\n                                        <section>\n                                        <button class=\"true\">").concat(data.results[7].correct_answer, "</button>\n                                        <button class=\"false\">").concat(data.results[7].incorrect_answers[0], "}</button>\n                                        <button class=\"false\">").concat(data.results[7].incorrect_answers[1], "</button>\n                                        <button class=\"false\">").concat(data.results[7].incorrect_answers[2], "</button>\n                                            <button class=\"next8\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                                            </section>\n                                            "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                                  quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 8</h1>\n                            <h2>".concat(data.results[7].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"true\">").concat(data.results[7].correct_answer, "</button>\n                            <button class=\"false\">").concat(data.results[7].incorrect_answers[0], "}</button>\n                            <button class=\"false\">").concat(data.results[7].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[7].incorrect_answers[2], "</button>\n                            <button class=\"next8\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                                   var _sandt7 = document.querySelector('.true');
 
@@ -271,13 +271,13 @@ document.addEventListener('DOMContentLoaded', function () {
                                         });
                                       }
                                     });
-                                  }); // Her slutter spørgsemål nr 8
+                                  }); //her slutter spørgsmål 8
                                   // Her starter spørgsemål nr 9
 
 
                                   document.querySelector('.next8').addEventListener('click', function () {
                                     if (_sandt7.style.backgroundColor = "lightgreen") {
-                                      quizArticle.innerHTML = "\n                                                                    <section>\n                                                                    <h1>Sp\xF8grsm\xE5l 9</h1>\n                                                                    <h2>".concat(data.results[8].question, "</h2>\n                                                                </section>\n                                                                <section>\n                                                                <button class=\"false\">").concat(data.results[8].incorrect_answers[0], "}</button>\n                                                                <button class=\"true\">").concat(data.results[8].correct_answer, "</button>\n                                                                <button class=\"false\">").concat(data.results[8].incorrect_answers[1], "</button>\n                                                                <button class=\"false\">").concat(data.results[8].incorrect_answers[2], "</button>\n                                                                    <button class=\"next9\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                                                                    </section>\n                                                                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                                      quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 9</h1>\n                            <h2>".concat(data.results[8].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"false\">").concat(data.results[8].incorrect_answers[0], "}</button>\n                            <button class=\"true\">").concat(data.results[8].correct_answer, "</button>\n                            <button class=\"false\">").concat(data.results[8].incorrect_answers[1], "</button>\n                            <button class=\"false\">").concat(data.results[8].incorrect_answers[2], "</button>\n                            <button class=\"next9\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                                       var _sandt8 = document.querySelector('.true');
 
@@ -304,12 +304,13 @@ document.addEventListener('DOMContentLoaded', function () {
                                             });
                                           }
                                         });
-                                      }); //her slutter spørgsmål 9
+                                      }); //her slutter spørgsmål 9         
+                                      // Her starter spørgsemål nr 10
 
 
                                       document.querySelector('.next9').addEventListener('click', function () {
                                         if (_sandt8.style.backgroundColor = "lightgreen") {
-                                          quizArticle.innerHTML = "\n                                                                            <section>\n                                                                            <h1>Sp\xF8grsm\xE5l 10</h1>\n                                                                            <h2>".concat(data.results[8].question, "</h2>\n                                                                        </section>\n                                                                        <section>\n                                                                        <button class=\"false\">").concat(data.results[9].incorrect_answers[0], "}</button>\n                                                                        <button class=\"false\">").concat(data.results[9].incorrect_answers[1], "</button>\n                                                                        <button class=\"true\">").concat(data.results[9].correct_answer, "</button>\n                                                                        <button class=\"false\">").concat(data.results[9].incorrect_answers[2], "</button>\n                                                                            <button class=\"next10\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                                                                            </section>\n                                                                            "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
+                                          quizArticle.innerHTML = "\n                        <section>\n                            <h1>Sp\xF8grsm\xE5l 10</h1>\n                            <h2>".concat(data.results[8].question, "</h2>\n                        </section>\n                        <section>\n                            <button class=\"false\">").concat(data.results[9].incorrect_answers[0], "}</button>\n                            <button class=\"false\">").concat(data.results[9].incorrect_answers[1], "</button>\n                            <button class=\"true\">").concat(data.results[9].correct_answer, "</button>\n                            <button class=\"false\">").concat(data.results[9].incorrect_answers[2], "</button>\n                            <button class=\"next10\">N\xE6ste Sp\xF8rgsm\xE5l</button>\n                        </section>\n                    "); //Her får jeg det rigtige svar til at blive blot og forkerte svar rødt
 
                                           var _sandt9 = document.querySelector('.true');
 
@@ -340,10 +341,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                                           document.querySelector('.next10').addEventListener('click', function () {
                                             container.style.display = "block";
-                                          });
+                                          }); //her slutter spørgsmål 10
                                         }
-                                      }); // Her starter spørgsemål nr 10
-                                      //her slutter spørgsmål 10
+                                      });
                                     }
                                   });
                                 }
